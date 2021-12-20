@@ -14,7 +14,8 @@
     <form action="" class="formulario" id="formulario">
         Nombre <input type="text" id="referencia" name="referencia" required pattern="[A-Z]{3}[0-9]{4}"
             title="El formato debe coincidir con 3 letras mayúsculas y 4 números." /><br>
-        Apellido<input type="text" required>
+        Apellido<input type="text" required><br>
+        Domicilio<input type="text" onblur="cambiar(this)"><br>
 
         Required<input type="radio" name="radiocheck"required>
 
