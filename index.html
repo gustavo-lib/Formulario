@@ -12,20 +12,17 @@
 
 <body>
     <form action="" class="formulario" id="formulario">
-        Nombre <input type="text" id="referencia" name="referencia" required pattern="[A-Z]{3}[0-9]{4}"
-            title="El formato debe coincidir con 3 letras mayúsculas y 4 números." /><br>
-        Apellido<input type="text" required><br>
-        Domicilio<input type="text" onblur="cambiar(this)"><br>
-
-        Required<input type="radio" name="radiocheck"required><br>
-        Edad<input type="text" id="edad" name="edad" pattern="[0-9]+" /> 
+      
 
         validar<input type="text" id="dato" class="dato"><br>
 
         <div class="">
-            <button type="submit" onclick="validar()"class="">Enviar</button>
+            <button  onclick="validar()"class="">Enviar</button>
             
         </div>
+
+        <p id="resultado">Resultado</p>
+            <input type="button" id="boton" value="Volver a la pagina anterior" onclick="historyBack()" />
     </form>
     <script src="js/formulario.js"></script>
 </body>
