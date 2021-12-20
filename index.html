@@ -17,10 +17,13 @@
         Apellido<input type="text" required><br>
         Domicilio<input type="text" onblur="cambiar(this)"><br>
 
-        Required<input type="radio" name="radiocheck"required>
+        Required<input type="radio" name="radiocheck"required><br>
+        Edad<input type="text" id="edad" name="edad" pattern="[0-9]+" /> 
+
+        validar<input type="text" id="dato" class="dato"><br>
 
         <div class="">
-            <button type="submit" class="">Enviar</button>
+            <button type="submit" onclick="validar()"class="">Enviar</button>
             
         </div>
     </form>
